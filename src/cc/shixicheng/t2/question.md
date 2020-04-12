@@ -13,43 +13,53 @@ each digit in S' is equal to its nesting depth, and
 S' is of minimum length.
 
 Input
+
 The first line of the input gives the number of test cases, T. T lines follow. Each line represents a test case and contains only the string S.
 
 Output
+
 For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is the string S' defined above.
 
 Limits
-Time limit: 20 seconds per test set.
-Memory limit: 1GB.
-1 ≤ T ≤ 100.
-1 ≤ length of S ≤ 100.
+
+- Time limit: 20 seconds per test set.
+
+- Memory limit: 1GB.
+
+- 1 ≤ T ≤ 100.
+
+- 1 ≤ length of S ≤ 100.
 
 Test set 1 (Visible Verdict)
+
 Each character in S is either 0 or 1.
 
 Test set 2 (Visible Verdict)
+
 Each character in S is a decimal digit between 0 and 9, inclusive.
 
 Sample
 
 Input
 
-Output
-
+```
 4
 0000
 101
 111000
 1
+```
 
+Output
 
+```
 Case #1: 0000
 Case #2: (1)0(1)
 Case #3: (111)000
 Case #4: (1)
+```
 
-
-The strings ()0000(), (1)0(((()))1) and (1)(11)000 are not valid solutions to Sample Cases #1, #2 and #3, respectively, only because they are not of minimum length. In addition, 1)( and )(1 are not valid solutions to Sample Case #4 because they contain unmatched parentheses and the nesting depth is 0 at the position where there is a 1.
+The strings `()0000()`, `(1)0(((()))1)` and` (1)(11)000` are not valid solutions to Sample Cases #1, #2 and #3, respectively, only because they are not of minimum length. In addition, 1)( and )(1 are not valid solutions to Sample Case #4 because they contain unmatched parentheses and the nesting depth is 0 at the position where there is a 1.
 
 You can create sample inputs that are valid only for Test Set 2 by removing the parentheses from the example strings mentioned in the problem statement.
 

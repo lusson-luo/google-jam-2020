@@ -9,31 +9,35 @@ For example, suppose that Jamie and Cameron need to cover 3 activities: one runn
 Given the starting and ending times of each activity, find any schedule that does not require the same person to cover overlapping activities, or say that it is impossible.
 
 Input
+
 The first line of the input gives the number of test cases, T. T test cases follow. Each test case starts with a line containing a single integer N, the number of activities to assign. Then, N more lines follow. The i-th of these lines (counting starting from 1) contains two integers Si and Ei. The i-th activity starts exactly Si minutes after midnight and ends exactly Ei minutes after midnight.
 
 Output
+
 For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is IMPOSSIBLE if there is no valid schedule according to the above rules, or a string of exactly N characters otherwise. The i-th character in y must be C if the i-th activity is assigned to Cameron in your proposed schedule, and J if it is assigned to Jamie.
 
 If there are multiple solutions, you may output any one of them. (See "What if a test case has multiple correct solutions?" in the Competing section of the FAQ. This information about multiple solutions will not be explicitly stated in the remainder of the 2020 contest.)
 
 Limits
-Time limit: 20 seconds per test set.
-Memory limit: 1GB.
-1 ≤ T ≤ 100.
-0 ≤ Si < Ei ≤ 24 × 60.
+
+- Time limit: 20 seconds per test set.
+- Memory limit: 1GB.
+- 1 ≤ T ≤ 100.
+- 0 ≤ Si < Ei ≤ 24 × 60.
 
 Test set 1 (Visible Verdict)
+
 2 ≤ N ≤ 10.
 
 Test set 2 (Visible Verdict)
+
 2 ≤ N ≤ 1000.
 
 Sample
 
 Input
 
-Output
-
+```
 4
 3
 360 480
@@ -52,13 +56,16 @@ Output
 2
 0 720
 720 1440
+```
 
+Output
 
+```
 Case #1: CJC
 Case #2: IMPOSSIBLE
 Case #3: JCCJJ
 Case #4: CC
-
+```
 
 Sample Case #1 is the one described in the problem statement. As mentioned above, there are other valid solutions, like JCJ and JCC.
 
